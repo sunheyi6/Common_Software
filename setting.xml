@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    
+    <!--自定义本地仓库路径-->
+    <localRepository>E:\program soft\Maven_Repo</localRepository>
+   
+    <pluginGroups>
+    </pluginGroups>
+
+    <proxies>
+    </proxies>
+    <servers>
+    </servers>
+    <profiles>
+          <profile>
+                <id>jdk-1.8</id>
+                <activation>
+                      <activeByDefault>true</activeByDefault>
+                      <jdk>1.8</jdk>
+                </activation>
+                <properties>
+                      <maven.compiler.source>1.8</maven.compiler.source>
+                      <maven.compiler.target>1.8</maven.compiler.target>
+                      <maven.compiler.compillerVersion>1.8</maven.compiler.compillerVersion>
+                </properties>
+          </profile>
+    </profiles>
+
+    <mirrors>
+      <mirror>
+            <id>aliyunmaven</id>
+            <mirrorOf>*</mirrorOf>
+            <name>阿里云公共仓库</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+           </mirror>
+            <mirror>
+            <id>aliyunmaven</id>
+            <mirrorOf>*</mirrorOf>
+            <name>阿里云谷歌仓库</name>
+            <url>https://maven.aliyun.com/repository/google</url>
+           </mirror>
+           <mirror>
+            <id>aliyunmaven</id>
+            <mirrorOf>*</mirrorOf>
+            <name>阿里云阿帕奇仓库</name>
+            <url>https://maven.aliyun.com/repository/apache-snapshots</url>
+           </mirror>
+           <mirror>
+            <id>aliyunmaven</id>
+            <mirrorOf>*</mirrorOf>
+            <name>阿里云spring仓库</name>
+            <url>https://maven.aliyun.com/repository/spring</url>
+           </mirror>
+           <mirror>
+            <id>aliyunmaven</id>
+            <mirrorOf>*</mirrorOf>
+            <name>阿里云spring插件仓库</name>
+            <url>https://maven.aliyun.com/repository/spring-plugin</url>
+           </mirror>
+    </mirrors>
+</settings>
+
